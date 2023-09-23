@@ -58,10 +58,10 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar-end flex gap-8">
-          {HEADER_NAV.map((link) => (
+          {HEADER_NAV.map((link, index) => (
             <Link
               href={link.path}
-              key={link.path}
+              key={index}
               className='flex flex-col items-center gap-1 text-gray-500'
             >
               {link.icon}

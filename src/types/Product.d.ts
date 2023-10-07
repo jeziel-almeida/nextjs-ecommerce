@@ -12,3 +12,10 @@ export interface Product {
     thumbnail: string;
     images: string[];
 }
+
+export interface RecommendedProduct {
+    id: string;
+    name: string;
+    price: string;
+    image: string;
+}

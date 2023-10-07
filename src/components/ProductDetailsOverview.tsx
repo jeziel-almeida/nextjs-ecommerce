@@ -15,11 +15,12 @@ const ProductDetailsOverview = ({ product }: ProductsDetailsProps) => {
 
     const changeProductAmount = (operation: 'add' | 'subtract') => {
         
-        operation === 'add' && productAmount < stock 
-            ? setProductAmount(productAmount++) 
-            : productAmount > 0 
-            ? setProductAmount(productAmount--) 
-            : {};
+        if(operation == 'add' && productAmount < stock) {
+            setProductAmount(productAmount++)
+
+        } else if(operation == 'subtract' && productAmount > 0) {
+            setProductAmount(productAmount--)
+        }
     }
 
     return (

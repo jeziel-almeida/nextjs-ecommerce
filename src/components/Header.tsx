@@ -1,26 +1,8 @@
 import Link from 'next/link';
 import React from 'react'
 import { FaShoppingBasket } from 'react-icons/fa';
-import { TbShoppingCartFilled } from 'react-icons/tb';
-import { RiArrowDownSLine, RiTruckFill, RiUser3Fill } from 'react-icons/ri';
-
-export const HEADER_NAV = [
-  {
-    label: "Profile",
-    path: "/profile",
-    icon: <RiUser3Fill fontSize={20} />
-  },
-  {
-    label: "Orders",
-    path: "/orders",
-    icon: <RiTruckFill fontSize={20} />
-  },
-  {
-    label: "My Cart",
-    path: "/cart",
-    icon: <TbShoppingCartFilled fontSize={20} />
-  }
-]
+import { RiArrowDownSLine } from 'react-icons/ri';
+import { HEADER_NAV } from '@/lib/const/navigation';
 
 const Header = () => {
   return (

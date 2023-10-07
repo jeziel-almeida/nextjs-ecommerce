@@ -1,25 +1,7 @@
-import Link from 'next/link'
-import React from 'react'
-import { RiMenu2Line } from 'react-icons/ri'
-
-export const CATEGORY_LINK = [
-    {
-        label: "Mobile Phones",
-        path: "/list"
-    },
-    {
-        label: "Laptos & Desktops",
-        path: "/list"
-    },
-    {
-        label: "PC Games",
-        path: "/list"
-    },
-    {
-        label: "Home & Furniture",
-        path: "/list"
-    },
-]
+import { CATEGORY_LINKS } from '@/lib/const/navigation';
+import Link from 'next/link';
+import React from 'react';
+import { RiMenu2Line } from 'react-icons/ri';
 
 const MainCategory = () => {
   return (
@@ -30,7 +12,7 @@ const MainCategory = () => {
                     <RiMenu2Line fontSize={18} />
                     All Category
                 </Link>
-                {CATEGORY_LINK.map((category, index) => (
+                {CATEGORY_LINKS.map((category, index) => (
                     <Link href={category.path} key={index}>
                         {category.label}
                     </Link>

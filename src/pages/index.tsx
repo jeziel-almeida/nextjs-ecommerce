@@ -1,11 +1,12 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
     return (
         <div>
             <Head>
-                <title>Next Ecommerce</title>
+                <title>Basket | Home</title>
             </Head>
 
             <Layout>
